@@ -1,0 +1,24 @@
+{
+  "scriptFile": "__init__.py",
+  "disabled": false,
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "event",
+      "direction": "in",
+      "eventHubName": "",
+      "connection": "IOT_HUB_CONNECTION_STRING",
+      "cardinality": "one",
+      "consumerGroup": "$Default"
+    },
+    {
+      "name": "outputblob",
+      "type": "blob",
+      "dataType": "string",
+      "path": "gps-sensor/{rand-guid}.json",
+      "connection": "STORAGE_CONNECTION_STRING",
+      "direction": "out"
+    }
+    
+  ]
+}
