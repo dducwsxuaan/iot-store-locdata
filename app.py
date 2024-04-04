@@ -7,7 +7,7 @@ import pynmea2
 import json
 from azure.iot.device import IoTHubDeviceClient, Message
 
-connection_string = 'HostName=gps-sensor-ddxuan.azure-devices.net;DeviceId=gps-sensor;SharedAccessKey=1Xfa/rUQ6/Vm3gMw8vqCvjcb6wToa/P5OAIoTHbwFTg='
+connection_string = ''
 
 serial = counterfit_shims_serial.Serial('/dev/ttyAMA0')
 
